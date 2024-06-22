@@ -1,0 +1,12 @@
+.todos__item_form-text {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.todos__item_complited .todos__item_form-text {
+  color: rgba(0, 0, 0, .6);
+  text-decoration: line-through;
+}

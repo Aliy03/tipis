@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <title>Приложение</title>
+  <body class="body">
+    <div class="mobile">
+          <div class="mobile_top">
+              <img src="images/top.svg">
+          </div>
+  
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a href="/" class="header__nav_link nav-button">
+            <div>
+              <span class="material-symbols-outlined button__icon">
+                home
+              </span>
+            </div>
+            <div>
+              На главную
+            </div>
+          </a>
+          <a href="/new" class=" header__nav_link nav-button">
+            <div>
+              <span class="material-symbols-outlined button__icon">
+                add_circle
+              </span>
+            </div>
+            <div>
+              места <!--кнопка для перехода на другую страницу-->
+            </div>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="mobile_content">
+      <div class="wellcome">
+        <h1>Приложения</h1>
+        <p class="wellcome__text">
+          Привет!Наше приложение позволит быстро и удобно <br>найти подходящие место для отдыха!
+        </p>
+        <img src="" alt="" class="wellcome__img">
+      </div>
+      <div class 'scrollmenu'>
+      <div class="todos">
+         <ul class="todos__list">
+          <li class="todos__item">
+           <form action="/delete/1" method="post" class="todos__item_form-delete">
+              <input type="hidden" name="_id" value="1">
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  delete
+                </span>
+              </button>
+            </form>
+            <form action="/complete/1" method="post" class="todos__item_form-todo">
+              <input type="hidden" name="_id" value="1">
+              <div class="todos__item_form-text">
+                Покормить кошку
+              </div>
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  circle
+                </span>
+              </button>
+            </form>
+          </li>
+          <li class="todos__item">
+            <form action="/delete/1" method="post" class="todos__item_form-delete">
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  delete
+                </span>
+              </button>
+            </form>
+            <form action="/complete/1" method="post" class="todos__item_form-todo">
+              <div class="todos__item_form-text">
+                Выгулять собаку
+              </div>
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  circle
+                </span>
+              </button>
+            </form>
+          </li>
+          <li class="todos__item todos__item_complited">
+           <form action="/delete/1" method="post" class="todos__item_form-delete">
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  delete
+                </span>
+              </button>
+            </form> 
+            <form action="/complete/1" method="post" class="todos__item_form-todo">
+              <div class="todos__item_form-text">
+                Наконец-таки поправить вертстку сайта и разобраться как же работает этот замечательный Javascript.
+              </div>
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  check_circle
+                </span>
+              </button>
+            </form>
+          </li>
+        </ul> 
+      </div>
+      </div>
+    </div>
+  
+  </main>
+  
+  </body>
+  <footer>
+    <div class="mobile_bottom">
+      <img src="images/bottom.svg">
+    </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </footer>  
+</html>

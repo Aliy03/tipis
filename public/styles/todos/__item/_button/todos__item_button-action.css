@@ -1,0 +1,26 @@
+.todos__item_button-action {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #f3b5f9;
+  color: #18bf45;  
+  border-radius: 100%;
+  margin-right: 10px;
+
+ 
+}
+
+.todos__item_button-action:hover {
+  cursor: pointer;
+  color: #00fd87;
+  box-shadow: 0 0 10px #270e2a;
+}
+
+.todos__item_button-action :after {
+  margin-top: -2px;;
+  margin-left: -7px;
+  content: '→';
+  font-size: 18px;
+  display: block;
+  transform: rotate(0deg);
+}

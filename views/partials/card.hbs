@@ -1,0 +1,26 @@
+<style>
+        .scrollmenu{
+            width: 350px;
+            height: 390px;
+            overflow-y: scroll;
+            scrollbar-width: none;
+        }
+</style>
+
+<li class="todos__item {{completedClass}}">
+  
+  <form action="/complete" method="post" class="todos__item_form-todo">
+  <input type="hidden" name="id" value="{{id}}">
+    <div class="todos__item_form-text">
+      {{ name }}
+    </div>
+    <button type="submit" class="todos__item_button-action ">
+    <input type="hidden" name="id" value="{{id}}">
+    <div class="todos__item_form-text">
+      
+    </div>
+    
+  </form>
+</li>
+
+

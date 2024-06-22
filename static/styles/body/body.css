@@ -1,0 +1,37 @@
+:root{
+  --color_bg: #b4faee;
+  --gradient: linear-gradient(to right, #d1b4fa 0%, #d28ffb 100%);
+  --color_text: #000000;
+  --grey: #e1e1e1;
+  --white: #ffffff;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "LXGW WenKai Mono TC", monospace;  
+  background-color: var(--color_bg);
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.mobile {
+  width: 350px;
+  height: 630px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px rgba(0,0,0,30%);
+  display: grid;
+  grid-template-rows: 48px 1fr 62px;
+}
+
+.mobile_top, .mobile_bottom {
+ align-self: center;
+ justify-self: center;
+}
