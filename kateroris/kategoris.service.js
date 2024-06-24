@@ -1,8 +1,8 @@
-const { kategorieModel } = require("./todos.model");
+const { kategorieModel } = require("./kategoris.model");
 
 
 
-class TodosService {
+class kategorisService {
 
   kategorieModel;
 
@@ -38,5 +38,5 @@ class TodosService {
 
 
 module.exports = {
-  TodosService,
+  kategorisService,
 }

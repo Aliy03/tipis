@@ -1,14 +1,18 @@
 const { Router } = require("express");
-const { TodosService } = require("../todos/todos.service");
+const { kategorisService } = require("../kateroris/kategoris.service");
 const { mestService } = require("../mesta/mesta.service");
+const { torgovcentrService } = require("../torgovcentr/torgovcentr.service");
 
 const router = Router();
-const todosService = new TodosService();
+const KategorisService = new kategorisService();
 const MestService = new mestService();
+const TorgovcentrService = new torgovcentrService();
+
+
 
 router.get('/', async (req, res, next) => {
 
-  const listSrc = await todosService.getList();
+  const listSrc = await KategorisService.getList();
 
   const list = listSrc.map((el) => {
     return {
@@ -57,36 +61,8 @@ router.get('/new', async (req, res, next) => {
 
 });
 
-
-router.post('/add', async (req, res, next) => {
-
-  const { text } = req.body;
-  const newTask = await todosService.addTask(text);  
-  res.redirect('/');
-
-});
-
-router.post('/complete', async (req, res, next) => {
-
-  const { id } = req.body;
-
-  await todosService.toggleComplete(id);
-
-  res.redirect('/');
-
-});
-
-router.post('/delete', async (req, res, next) => {
-  const { id } = req.body;
-
-  const newTask = await todosService.delete(id);
-  res.redirect('/');
-
-});
-
-router.get('/kat', async (req, res, next) => {
-
-  const listSrc = await todosService.getList();
+router.get('/torgovcentr', async (req, res, next) => {
+  const listSrc = await TorgovcentrService.getList();
 
   const list = listSrc.map((el) => {
     return {
@@ -98,14 +74,27 @@ router.get('/kat', async (req, res, next) => {
     };
   });
 
-  res.render('index', {
-    title: 'Путешествия',
-    description: 'Приложение - путишествие',
-    h1: 'Путешествие',
-    text: 'Привет!Наше приложение позволит быстро и удобно <br>найти подходящие место для отдыха!',
+  
+
+  res.render('torgovcentr', {
+    title: 'торгоцентр',
+    description: 'торгоцентр',
+    h1: 'Торогвые центры',
+    text: 'Представляем вам самые популярные <br> торговые центры в нашем городе',
     list,
   });
+
 });
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 const { model } = require('mongoose');
-const { kategorieSchema } = require('./todos.schema');
+const { kategorieSchema } = require('./kategoris.schema');
 
 
 const kategorieModel = model('kategorie', kategorieSchema);

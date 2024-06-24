@@ -29,6 +29,7 @@ body {
   box-shadow: -5px 5px 10px rgba(0,0,0,30%);
   display: grid;
   grid-template-rows: 48px 1fr 62px;
+  position: relative;
 }
 
 .mobile_top{
@@ -39,6 +40,8 @@ body {
 .mobile_bottom{
   align-self: center;
   justify-self: center;
+  bottom: 0;
+  left: 0;
 }
 
 .mobile_content {

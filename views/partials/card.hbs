@@ -5,20 +5,21 @@
             overflow-y: scroll;
             scrollbar-width: none;
         }
+
+        .bdstyl__item_button-action {
+            span {
+              display: block;
+            }
+        }
 </style>
 
-<li class="todos__item {{completedClass}}">
+<li class="bdstyl__item {{completedClass}}">
   
-  <form action="/complete" method="post" class="todos__item_form-todo">
-  <input type="hidden" name="id" value="{{id}}">
-    <div class="todos__item_form-text">
-      {{ name }}
-    </div>
-    <button type="submit" class="todos__item_button-action ">
-    <input type="hidden" name="id" value="{{id}}">
-    <div class="todos__item_form-text">
-      
-    </div>
+  <form action="/complete" method="post" class="bdstyl__item_form-todo">
+  <span>{{ name }}</span>
+    <a class="bdstyl__item_button-action" href="/torgovcentr">
+        <span class="bdstyl__item_form-text"></span>
+    </a>
     
   </form>
 </li>

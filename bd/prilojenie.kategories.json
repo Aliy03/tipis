@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "66752141d8ff716c2263ea9a"
+  },
+  "name": "Активный отдых",
+  "completed": false,
+  "value": "new",
+  "createdAt": {
+    "$date": "2024-06-21T06:44:17.006Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6675214fd8ff716c2263ea9d"
+  },
+  "name": "Пассивный отдых ",
+  "completed": false,
+  "createdAt": {
+    "$date": "2024-06-21T06:44:31.991Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6675215dd8ff716c2263eaa0"
+  },
+  "name": "Культура",
+  "completed": false,
+  "createdAt": {
+    "$date": "2024-06-21T06:44:45.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6675912aabca15c43490cb75"
+  },
+  "name": "Образование",
+  "completed": false,
+  "createdAt": {
+    "$date": "2024-06-21T14:41:46.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66759137abca15c43490cb78"
+  },
+  "name": "Встреча",
+  "completed": false,
+  "createdAt": {
+    "$date": "2024-06-21T14:41:59.755Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6675914dabca15c43490cb7b"
+  },
+  "name": "Развлечение ",
+  "completed": false,
+  "createdAt": {
+    "$date": "2024-06-21T14:42:21.080Z"
+  },
+  "__v": 0
+}]

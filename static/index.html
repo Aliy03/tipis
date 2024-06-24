@@ -52,65 +52,34 @@
         <img src="" alt="" class="wellcome__img">
       </div>
       <div class 'scrollmenu'>
-      <div class="todos">
-         <ul class="todos__list">
-          <li class="todos__item">
-           <form action="/delete/1" method="post" class="todos__item_form-delete">
+      <div class="bdstyl">
+         <ul class="bdstyl__list">
+          <li class="bdstyl__item">
+           
+            <form action="/complete/1" method="post" class="bdstyl__item_form-todo">
               <input type="hidden" name="_id" value="1">
-              <button type="submit" class="todos__item_button-action">
-                <span class="material-symbols-outlined">
-                  delete
-                </span>
-              </button>
-            </form>
-            <form action="/complete/1" method="post" class="todos__item_form-todo">
-              <input type="hidden" name="_id" value="1">
-              <div class="todos__item_form-text">
-                Покормить кошку
+              <div class="bdstyl__item_form-text">
+                ...
               </div>
-              <button type="submit" class="todos__item_button-action">
-                <span class="material-symbols-outlined">
-                  circle
-                </span>
-              </button>
+              
             </form>
           </li>
-          <li class="todos__item">
-            <form action="/delete/1" method="post" class="todos__item_form-delete">
-              <button type="submit" class="todos__item_button-action">
-                <span class="material-symbols-outlined">
-                  delete
-                </span>
-              </button>
-            </form>
-            <form action="/complete/1" method="post" class="todos__item_form-todo">
-              <div class="todos__item_form-text">
-                Выгулять собаку
+          <li class="bdstyl__item">
+            
+            <form action="/complete/1" method="post" class="bdstyl__item_form-todo">
+              <div class="bdstyl__item_form-text">
+                ...
               </div>
-              <button type="submit" class="todos__item_button-action">
-                <span class="material-symbols-outlined">
-                  circle
-                </span>
-              </button>
+              
             </form>
           </li>
-          <li class="todos__item todos__item_complited">
-           <form action="/delete/1" method="post" class="todos__item_form-delete">
-              <button type="submit" class="todos__item_button-action">
-                <span class="material-symbols-outlined">
-                  delete
-                </span>
-              </button>
-            </form> 
-            <form action="/complete/1" method="post" class="todos__item_form-todo">
-              <div class="todos__item_form-text">
-                Наконец-таки поправить вертстку сайта и разобраться как же работает этот замечательный Javascript.
+          <li class="bdstyl__item bdstyl__item_complited">
+           
+            <form action="/complete/1" method="post" class="bdstyl__item_form-todo">
+              <div class="bdstyl__item_form-text">
+                ...
               </div>
-              <button type="submit" class="todos__item_button-action">
-                <span class="material-symbols-outlined">
-                  check_circle
-                </span>
-              </button>
+              
             </form>
           </li>
         </ul> 

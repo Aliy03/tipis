@@ -15,10 +15,6 @@ class mestService {
     return this.mestModel.find({}).sort({'createdAt': -1}).exec();
   }
 
-  
-
-  
-
   async toggleComplete(id) {
 
     const previous = await this.mestModel.findById(id);
